@@ -19,8 +19,8 @@ fun product(numbers:Array<Int>):Int{
 fun add(numbers: Array<Any>):Double{
     var Jibu = 0.0
     numbers.forEach { N ->
-        if (N is Double){
-            Jibu+=N
+        if (N is Double|| N is Float){
+            Jibu+=N.toString().toDouble()
         }
     }
     return Jibu
